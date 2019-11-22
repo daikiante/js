@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- css reset-->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+
+<!-- css style-->
+<link rel="stylesheet" href="style.css">
+
+<!-- css bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- javascript -->
+<script type="text/javascript" src="/Users/daikiyamada/Desktop/JS/test.js"></script>
+<script type="text/javascript" src="/Users/daikiyamada/Desktop/JS/test2.js"></script>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 class='heading' styale='color: red;'>Hello World</h1>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    <p id="p1">テスト１</p>
+<input type="button" value="ボタン1" onclick="clickBtn1()" />
+
+
+<!-- button js-1-->
+<script>
+//初期表示は非表示
+document.getElementById("p1").style.display ="none";
+
+function clickBtn1(){
+	const p1 = document.getElementById("p1");
+
+	if(p1.style.display=="block"){
+		// noneで非表示
+		p1.style.display ="none";
+	}else{
+		// blockで表示
+		p1.style.display ="block";
+	}
+}
+</script>
+
+<!-- button js-2 -->
+<script language="Javascript">
+
+function Click_Sub() {
+	if (document.all.div1.style.display == "none") {
+		document.all.div1.style.display = "block"
+	} else {
+		document.all.div1.style.display = "none"
+	}
+}
+</script>
+
+<input type="button" value="めっちゃエロいボタン" onclick="Click_Sub()">
+<img id='div1' src="/Users/daikiyamada/Desktop/JS/aya_kawasaki.jpg" style='width: 150px; height: auto;'>
+
+
+
+
+<!-- button js-3 -->
+<!-- 外部ファイルとしてJavaScriptを読み込む -->
+<p id='demo' style='display:none;'>hello js</p>
+<button type='button' class='btn btn-success' onclick='test()'>click me</button>
+<script src="/Users/daikiyamada/Desktop/JS/test.js"></script>
+
+
+
+
+<!-- button js-4 -->
+
+
+
+
+
+
+
+    <!-- js bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
